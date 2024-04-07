@@ -1,0 +1,24 @@
+<table class="table table-bordered table-hover table-responsive-md bg-white">
+  <thead class="table-dark ">
+    <tr>
+      <td>NOME</td>
+      <td>IMC</td>
+      <td>SITUAÇÃO</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% datas.forEach(users=> { %>
+    <tr>
+      <td>
+        <%= users.name %>
+      </td>
+      <td>
+        <%= users.imc %>
+      </td>
+      <td>
+        <%= users.type %>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
